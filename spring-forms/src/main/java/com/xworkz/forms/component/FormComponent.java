@@ -35,14 +35,14 @@ public class FormComponent {
 
     @RequestMapping("matrimony")
     public String applyMatrimony(MatrimonyDTO matrimonyDTO){
-        System.out.println("running donateOrgan");
+        System.out.println("running matrimony");
         System.out.println(matrimonyDTO);
         return "matrimonyForm.jsp";
     }
 
     @RequestMapping("hotelRoom")
     public String bookHotelRoom(HotelRoomDTO hotelRoomDTO){
-        System.out.println("running donateOrgan");
+        System.out.println("running hotelRooms");
         System.out.println(hotelRoomDTO);
         return "hotelRoomForm.jsp";
     }
