@@ -46,4 +46,32 @@ public class FormComponent {
         System.out.println(hotelRoomDTO);
         return "hotelRoomForm.jsp";
     }
+
+    @RequestMapping("bank")
+    public String bankAccount(BankAccountDTO bankAccountDTO){
+        System.out.println("running bank account ");
+        System.out.println(bankAccountDTO);
+        return "BankAccountForm.jsp";
+    }
+
+    @RequestMapping("passport")
+    public String pass(PassportDTO passportDTO){
+        System.out.println("running passport");
+        System.out.println(passportDTO);
+        return "PassportForm.jsp";
+    }
+
+    @RequestMapping("deceased")
+    public String death(DeathCertificateDTO deathCertificateDTO){
+        System.out.println("running death certificate");
+        System.out.println(deathCertificateDTO);
+        return "DeathCertificate.jsp";
+    }
+
+    @RequestMapping("hospital")
+    public String patient(HospitalDTO hospitalDTO){
+        System.out.println("running Hospital");
+        System.out.println(hospitalDTO);
+        return "HospitalForm.jsp";
+    }
 }
