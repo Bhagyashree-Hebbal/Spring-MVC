@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class PassportDTO {
     private String givenName;
     private String surname;
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dateOfBirth;
     private String emailId;
     private String loginId;

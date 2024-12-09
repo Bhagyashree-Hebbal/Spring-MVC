@@ -11,9 +11,9 @@ import java.time.LocalDate;
 public class HospitalDTO {
     private int patientId;
     private String patientName;
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate admissionDate;
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dischargeDate;
     private long contactNumber;
 }
